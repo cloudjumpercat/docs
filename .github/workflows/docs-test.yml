@@ -1,0 +1,7 @@
+name: 'Test Action'
+on: [push]
+jobs: 
+  print-job-success: 
+    runs-on: ubuntu-latest
+    steps:
+      - echo: 'Merge was a success.'
