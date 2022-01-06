@@ -1,0 +1,11 @@
+name: 'Markdown Formatting Check'
+on:
+  pull-request:
+    types: [opened]
+jobs:
+  build:
+    name: Markdown formatting action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: .docs
