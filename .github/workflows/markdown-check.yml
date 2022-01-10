@@ -1,10 +1,11 @@
 name: 'Markdown Formatting Check'
 on:
-  pull-request:
-    types: [opened]
+  pull_request:
+    types: [labeled]
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'markdownlint')
     steps:
       - uses: actions/checkout@v2
       - uses: xt0rted/markdownlint-problem-matcher@v1
