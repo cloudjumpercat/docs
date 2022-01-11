@@ -1,0 +1,17 @@
+name: Convert XML to Markdown
+on:
+  pull-request:
+    type: [labeled]
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    if: contains(github.event.pull_request.labels.*.name, 'convert to markdown')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run pandoc
+        uses: docker://pandoc/core:2.9
+        with:
+          args: -f jats -t markdown
+  
