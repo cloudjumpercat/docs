@@ -6,8 +6,12 @@ on:
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
+    if: contains(github.event.pull_request.labels.*.name, 'convert to markdown')
     steps:
-      - uses: docker://pandoc/core:2.9
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run pandoc
+        uses: docker://pandoc/core:2.9
         with:
-          args: "--help" # gets appended to pandoc command
+          args: -f jats -t markdown
   
