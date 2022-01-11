@@ -13,5 +13,12 @@ jobs:
       - name: Run pandoc
         uses: docker://pandoc/core:2.9
         with:
-          args: -f jats -t markdown *.xml
+          args: -f jats -t markdown
+      - uses: actions/download-artifact@v2
+        with:
+          name: converted-docs
+      - uses: actions/upload-artifact@v2
+        with:
+          name: converted-docs
+          path: docs
   
