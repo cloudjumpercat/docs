@@ -3,11 +3,25 @@ on:
   pull_request:
     types: [labeled, push]
 jobs:
-  build:
+  Markdown-lint:
     runs-on: ubuntu-latest
     if: contains(github.event.pull_request.labels.*.name, 'markdownlint')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Super-Linter
-        uses: github/super-linter@v4.8.5
+        uses: github/super-linter/slim@v4.8.5
+        env: 
+          VALIDATE_MARKDOWN: true       
+  
+  Ready-for-review-label:
+    needs: Markdown-lint
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - name: Add ready for review label
+        uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ startsWith(github.event.comment.body, '/add-labels') }}
+        with:
+          labels: ready for review
+      
