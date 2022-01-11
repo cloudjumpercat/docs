@@ -9,3 +9,6 @@ Some text here.
 - Item 3
 
 alskdfjlkajsdlfkjlkasjdflkjasldkfjlkajsdff
+
+## Heading 2
+alskdfjkl
