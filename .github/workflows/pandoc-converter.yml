@@ -13,5 +13,5 @@ jobs:
       - name: Run pandoc
         uses: docker://pandoc/core:2.9
         with:
-          args: -f jats -t markdown -o "${i%.xml}.md" "$i";done
+          args: -f jats -t markdown -o "${i%.xml}.md" "$i"; done
   
