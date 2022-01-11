@@ -11,12 +11,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Run pandoc
-        uses: docker://pandoc/core:2.9
+        uses: docker://pandoc/core
         with:
-          args: -f jats -t markdown docs/**/*.md
-      # - uses: actions/download-artifact@v2
-       # with:
-          # name: converted-docs
+          args: -f jats -t markdown
       - uses: actions/upload-artifact@v2
         with:
           name: converted-docs
