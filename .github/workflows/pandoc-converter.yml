@@ -13,5 +13,5 @@ jobs:
       - name: Run pandoc
         uses: docker://pandoc/core:2.9
         with:
-          args: for i in *xml; do pandoc -f xml -t markdown -o "${i%.xml}.md" "$i";done
+          args: -f xml -t markdown -o "${i%.xml}.md" "$i";done
   
