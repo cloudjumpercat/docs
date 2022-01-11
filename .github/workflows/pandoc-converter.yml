@@ -1,7 +1,7 @@
 name: Convert XML to Markdown
 on:
   pull-request:
-    type: [labeled]
+    types: [labeled]
 
 jobs:
   convert_via_pandoc:
