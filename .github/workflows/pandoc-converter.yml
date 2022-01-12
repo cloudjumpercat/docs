@@ -13,7 +13,7 @@ jobs:
       - name: Run pandoc
         uses: docker://pandoc/core
         with:
-          args: -f jats -t gfm
+          args: -f html -t gfm https://www.logicmonitor.com/support/about-logicmonitor/overview/what-is-logicmonitor
       - uses: actions/upload-artifact@v2
         with:
           name: converted-docs
