@@ -5,8 +5,8 @@ for file in 2022-01-11-*.html
  do
     mv "$file" "`echo $file | sed 's/2022-01-11-//'`"
  done  
-#need something that will select all the html files in the folder and convert them to separate markdown files (this current one so far makes the MD files, but outputs all of the html files content to them)
-for file in *.html
+#need something that will select all the html files in the folder and convert them to separate markdown files (this current one so far makes the MD files, but still has a wonky ".html" in the file name)
+for FILE in *; 
  do 
-    reverse_markdown *.html > "$file".md
- done 
+    reverse_markdown $FILE  >  "$FILE".md;  
+ done  
