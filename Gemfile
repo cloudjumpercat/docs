@@ -1,4 +1,4 @@
-source "https://cloudjumpercat.github.io/docs/"
+source "https://rubygems.org"
 
 gem "jekyll"
 
