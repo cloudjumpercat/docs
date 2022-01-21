@@ -1,3 +1,6 @@
+---
+layout: documentation
+---
 # About the product
 <!-- wp:paragraph -->
 
