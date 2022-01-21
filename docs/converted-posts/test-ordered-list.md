@@ -1,3 +1,6 @@
+---
+layout: custom
+---
 # Test ordered list
 
 <!-- wp:list {"ordered":true} -->
