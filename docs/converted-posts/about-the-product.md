@@ -1,7 +1,3 @@
----
-layout: custom
----
-
 # About the product
 <!-- wp:paragraph -->
 
