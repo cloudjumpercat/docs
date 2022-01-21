@@ -6,14 +6,28 @@ body {
 }
 h1 {
   font-size: 55px;
+  font-weight: bold;
   color: #031C5B;
   font-family: 'Poppins', sans-serif;
 }
 h2 {
   font-size: 28px;
+  font-weight: bold;
   color: #031C5B;
   font-family: 'Poppins', sans-serif;
 }
 .side-bar {
   background-color: #F0F7FF;
+}
+@media .side-bar {
+  width: auto; 
+}
+a {
+  color: #031C5B;
+  text-decoration: none;
+}
+a:hover {
+  color: #031C5B;
+  background-image: none;
+  text-decoration: underline;
 }
