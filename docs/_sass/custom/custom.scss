@@ -18,9 +18,11 @@ h2 {
 }
 .side-bar {
   background-color: #F0F7FF;
+  width: auto;
 }
-@media .side-bar {
-  width: auto; 
+.site-title {
+  background-image: url(https://images.app.goo.gl/FzYnHcn8qsZqVoBN8);
+  background-color: #031C5B;
 }
 a {
   color: #031C5B;
