@@ -1,3 +1,6 @@
+---
+layout: custom
+---
 # Table with more complex formatting
 <!-- wp:table {"className":"is-style-stripes"} -->
 
