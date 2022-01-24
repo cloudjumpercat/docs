@@ -25,8 +25,26 @@ h2 {
 .site-header {
   background-color: #031C5B;
 }
-.nav-list, .nav-list-item {
+.nav-list {
+  .nav-list-item {
     font-size: 18px;
+    
+    .nav-list-link {
+      
+      &:hover,
+      &.active {
+        background-image: none;
+      }
+    }
+  }
+  .nav-list-expander {
+    &:hover {
+      background-image: none;
+    }
+  }
+}
+}
+  }
 }
 a {
   color: #031C5B;
@@ -36,10 +54,4 @@ a:hover {
   color: #031C5B;
   background-image: none;
   text-decoration: underline;
-}
-.nav-list-link:hover {
-  background-image: none;
-}
-.nav-list-expander:hover {
-  background-image: none;
 }
