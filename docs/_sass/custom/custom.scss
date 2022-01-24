@@ -37,3 +37,9 @@ a:hover {
   background-image: none;
   text-decoration: underline;
 }
+.nav-list-link:hover, &.active {
+  background-image: none;
+}
+.nav-list-expander:hover {
+  background-image: none;
+}
