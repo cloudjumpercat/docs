@@ -25,6 +25,9 @@ h2 {
 .site-header {
   background-color: #031C5B;
 }
+.site-title:hover {
+  background-image: none;
+}
 .nav-list,.nav-list-item {
   font-size: 18px;
   background-image: none;
@@ -40,6 +43,7 @@ h2 {
 }
 .nav-list-link:active {
   background-image: none;
+}
 a {
   color: #031C5B;
   text-decoration: none;
