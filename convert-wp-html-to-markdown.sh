@@ -17,3 +17,10 @@ for FILE in *
   do 
      mv "$FILE" "`echo $FILE | sed 's/.html//'`" 
   done
+  
+ #removes layout config and word press comments
+ for FILE in *
+  do 
+     sed -i '' 's/---.*---//g'  $FILE
+     sed -i '' 's/<!--.*-->//g' $FILE
+  done
