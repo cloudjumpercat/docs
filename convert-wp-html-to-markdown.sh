@@ -18,9 +18,11 @@ for FILE in *
      mv "$FILE" "`echo $FILE | sed 's/.html//'`" 
   done
   
- #removes layout config and word press comments
+ #removes layout config (except post title) and word press comments
  for FILE in *
   do 
-     sed -i '' 's/---.*---//g'  $FILE
+     sed -i '' 's/--- layout: post //g' $FILE
+     sed -i '' 's/date.*---//g' $FILE
+     sed -i '' 's/title: /# /g' $FILE
      sed -i '' 's/<!--.*-->//g' $FILE
   done
