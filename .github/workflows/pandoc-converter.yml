@@ -1,4 +1,4 @@
-name: Convert XML to Markdown
+name: Convert HTML to Markdown
 on:
   pull_request:
     types: [labeled]
@@ -13,7 +13,7 @@ jobs:
       - name: Run pandoc
         uses: docker://pandoc/core
         with:
-          args: -f jats -t gfm
+          args: -f html -t gfm
       - uses: actions/upload-artifact@v2
         with:
           name: converted-docs
