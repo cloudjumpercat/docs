@@ -1,1 +1,3 @@
-theme: jekyll-theme-minimal
+remote_theme: pmarsceill/just-the-docs
+
+logo: "/assets/LM-Logo-_Horizontal-White.png"
