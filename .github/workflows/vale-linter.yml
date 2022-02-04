@@ -6,10 +6,10 @@ on:
 jobs:
   Vale-lint:
     runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.labels.*.name, 'style-guide-check')
+    if: contains(github.event.pull_request.labels.*.name, 'style guide check')
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
       - name: Vale Linter
         uses: errata-ai/vale-action@v1.4.3
         env: GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
