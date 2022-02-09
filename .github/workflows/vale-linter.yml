@@ -1,7 +1,10 @@
 name: 'Style Guide Check'
 on: 
   pull_request:
-    types: [labeled]
+    types: 
+      - labeled
+    branches:
+      - 'main/**'
 
 jobs:
   Vale-lint:
