@@ -2,6 +2,8 @@ name: 'Markdown Formatting Check'
 on:
   pull_request:
     types: [labeled, push]
+    branches: 
+      - 'main/**'
 jobs:
   Markdown-lint:
     runs-on: ubuntu-latest
