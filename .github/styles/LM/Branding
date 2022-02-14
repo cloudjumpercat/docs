@@ -1,0 +1,9 @@
+extends: existence
+message: Use '%s' instead of '%s'. 
+level: warning
+ignorecase: false
+swap:
+  logic monitor: LogicMonitor
+  Logic Monitor: LogicMonitor
+  logicmonitor: LogicMonitor
+  
