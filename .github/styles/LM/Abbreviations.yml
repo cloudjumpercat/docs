@@ -4,5 +4,4 @@ level: warning
 code: false
 ignorecase: true
 tokens:
-    - appears to be
-    - arguably
+    - e.g.
