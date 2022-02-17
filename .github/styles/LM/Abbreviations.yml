@@ -4,7 +4,7 @@
 # level: warning
 # ignorecase: true
 # tokens: 
-  - e.g.
+#  - e.g.
 extends: existence
 message: Consider removing '%s'
 level: warning
