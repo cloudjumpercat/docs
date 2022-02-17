@@ -2,5 +2,5 @@ extends: existence
 message: "Abbreviation of "for example". Must be followed by a comma and be enclosed in parentheses like "(e.g., Example)"."
 level: warning
 ignorecase: true
-tokens:
-    - e.g.
+tokens: 
+  - e.g.
