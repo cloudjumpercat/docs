@@ -1,15 +1,6 @@
-# commenting out this to test what I'm doing wrong
-# extends: existence
-# message: "Abbreviation of "for example". Must be followed by a comma and be enclosed in parentheses like "(e.g., Example)"."
-# level: warning
-# ignorecase: true
-# tokens: 
-#  - e.g.
 extends: existence
-message: Consider removing '%s'
+message: "Abbreviation of "for example". Must be followed by a comma and be enclosed in parentheses like "(e.g., Example)"."
 level: warning
-code: false
 ignorecase: true
-tokens:
-    - appears to be
-    - arguably
+tokens: 
+  - tomato
