@@ -1,7 +1,8 @@
 extends: existence
-message: "Abbreviation of "for example". Must be followed by a comma and be enclosed in parentheses like "('%s', Example)"."
+message: Consider removing '%s'
 level: warning
 code: false
 ignorecase: true
-tokens: 
-  - tomato
+tokens:
+    - appears to be
+    - arguably
