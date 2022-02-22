@@ -13,7 +13,8 @@ jobs:
       - name: Super-Linter
         uses: github/super-linter/slim@v4.8.5
         env: 
-          VALIDATE_MARKDOWN: true       
+          VALIDATE_MARKDOWN: true
+          FILTER_REGEX_INCLUDE: .*converted-posts/.*
   
   Ready-for-review-label:
     needs: Markdown-lint
