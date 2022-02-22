@@ -15,8 +15,6 @@ jobs:
         env: 
           VALIDATE_MARKDOWN: true
           FILTER_REGEX_INCLUDE: .*converted-posts/.*
-      - name: Match Problems
-        uses: xt0rted/problem-matcher@v1
   
   Ready-for-review-label:
     needs: Markdown-lint
