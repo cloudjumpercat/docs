@@ -15,8 +15,7 @@ jobs:
         env: 
           VALIDATE_MARKDOWN: true
           FILTER_REGEX_INCLUDE: .*converted-posts/.*
-      - name: Annotate affected files
-        run: echo "::notice file={name},line={line},endLine={endLine},title={title}::{message}"
+      - name: 
   
   Ready-for-review-label:
     needs: Markdown-lint
