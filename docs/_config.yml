@@ -1,3 +1,17 @@
 remote_theme: pmarsceill/just-the-docs
 
 logo: "/assets/LM-Logo-_Horizontal-White.png"
+
+plugins:
+  - jekyll-seo-tag
+
+# Jekyll SEO Configuration
+title: LM
+description: Learn, explore and troubleshoot with LogicMonitor's Support Center.
+canonical_url: https://www.logicmonitor.com/support
+locale: en_US
+seo:
+  type: article
+  name: LogicMonitor Support Center
+twitter:
+  card: summary_large_image
