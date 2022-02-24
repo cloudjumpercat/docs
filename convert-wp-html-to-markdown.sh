@@ -13,7 +13,7 @@ for FILE in *
  done  
  
  #removes the .html files so only the .html.md files are left
- for FILE in *.html*
+ for FILE in *.html
   do 
      rm "$FILE" 
   done
