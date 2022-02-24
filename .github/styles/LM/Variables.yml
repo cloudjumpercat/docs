@@ -1,0 +1,9 @@
+extends: existence
+message: Use the corresponding variable in the ___ file instead of '%s'
+level: warning
+code: false
+ignorecase: true
+tokens:
+    - LogicMonitor
+    - Collector
+    - LogicModules
