@@ -12,6 +12,12 @@ for FILE in *
     reverse_markdown $FILE  >  "$FILE".md  
  done  
  
+ #removes the .html files so only the .html.md files are left
+ for FILE in *.html*
+  do 
+     rm "$FILE" 
+  done
+  
  #removes .html from the filenames
  for FILE in *.html*
   do 
