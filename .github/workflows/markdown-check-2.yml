@@ -1,0 +1,17 @@
+name: 'Markdown Formatting Check 2'
+on:
+  pull_request:
+    types: 
+      - labeled
+jobs:
+  Lint Markdown 2:
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'markdownlint')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install markdownlint
+        run: npm install markdownlint --save-dev
+      - uses: xt0rted/markdownlint-problem-matcher@v1
+      - name: Run markdownlint problem matcher
+        run: markdownlint **/*.md --ignore node_modules
