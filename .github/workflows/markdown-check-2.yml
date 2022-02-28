@@ -4,7 +4,7 @@ on:
     types: 
       - labeled
 jobs:
-  Lint Markdown 2:
+  Lint Markdown Two:
     runs-on: ubuntu-latest
     if: contains(github.event.pull_request.labels.*.name, 'markdownlint')
     steps:
