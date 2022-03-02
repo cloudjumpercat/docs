@@ -17,4 +17,4 @@ jobs:
       - name: Run markdownlint-cli
         run: markdownlint docs/**/*.md --ignore node_modules
       - name: Run markdownlint problem matcher
-        run: echo "::add-matcher::.github/markdown-problem-matcher.json"
+        run: echo "::add-matcher::markdown-problem-matcher.json"
