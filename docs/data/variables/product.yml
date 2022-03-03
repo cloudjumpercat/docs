@@ -1,0 +1,4 @@
+# Contains variables to reuse for LM product names
+
+# LM's flagship product
+product_name: 'LogicMonitor'
