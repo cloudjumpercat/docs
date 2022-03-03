@@ -4,10 +4,6 @@ logo: "/assets/LM-Logo-_Horizontal-White.png"
 
 plugins:
   - jekyll-seo-tag
-exclude:
-  - README.md
-  - converted-posts/README.md
-  - converted-posts/folder/README.md
 
 # Jekyll SEO Configuration
 title: LM
