@@ -1,5 +1,3 @@
----
----
 # About the product
 <!-- wp:paragraph -->
 
