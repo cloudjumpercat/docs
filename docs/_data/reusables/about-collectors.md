@@ -1,0 +1,1 @@
+The {{ site.data.variables.product.product_name }} Collector is an application that runs on a Linux or Windows server within your infrastructure and uses standard monitoring protocols to intelligently monitor devices within your infrastructure.
