@@ -1,5 +1,5 @@
 # Docs
-Test documentation site for the docs-as-code workflow.
+Test documentation site for the docs-as-code workflow. This repository is intended to highlight my DocOps experience, not my technical writing experience.
 
 ## Static Site Generator vs. WordPress
 Static site generators have the following advantages over WordPress:
